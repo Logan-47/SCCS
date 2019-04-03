@@ -1,2 +1,3 @@
 # SCCS
-SE-SCCS
+
+``` python3 fux.py ```
