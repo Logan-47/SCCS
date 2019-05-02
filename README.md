@@ -1,4 +1,5 @@
 # SCCS
 Software Component Cataloguing Software
-College assigments
+
+College assigment
 ``` python3 fux.py ```
