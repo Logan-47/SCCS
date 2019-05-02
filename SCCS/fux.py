@@ -232,6 +232,7 @@ class WindowMain():
 
     def on_edit_dialog_enter_clicked(self, widget, data=None):
         self.editName = self.builder.get_object('editName')
+        self.checkName = self.editName.get_text()
         sql = f"SELECT * FROM software WHERE name='{self.editName.get_text()}'"
         cursor.execute(sql)
         data = cursor.fetchall()
@@ -278,9 +279,12 @@ class WindowMain():
         self.category = self.editCategory.get_text()
         
         # Add Sql Query to send Data to Database
-        sql = f"SELECT * FROM software WHERE name='{self.name}'"
-        cursor.execute(sql)
-        data = cursor.fetchall()
+        if self.name != self.checkName: 
+            sql = f"SELECT * FROM software WHERE name='{self.name}'"
+            cursor.execute(sql)
+            data = cursor.fetchall()
+        # else:
+            
 
         if not data:
             sqlQuery = f"UPDATE software SET name='{self.name}',typemain='{self.MainType}',category='{self.category}',description='{self.description}' WHERE id='{self.resultId}'"
