@@ -1,3 +1,8 @@
+# -*- coding: utf-8 -*-
+# @Author: Logan-47
+# @Date:   2019-05-02 09:36:04
+# @Last Modified by:   Logan-47
+# @Last Modified time: 2019-09-04 21:58:17
 #!/usr/bin/python3
 import gi
 gi.require_version('Gtk','3.0')
@@ -154,6 +159,9 @@ class WindowMain():
             self.store.append(['Utility'])
         else:
             self.store.append(['Types Of SystemSoftware'])
+            self.store.append(['operating system'])
+            self.store.append([' file management utilities'])
+            self.store.append(['disk operating system (or DOS)'])
         
         self.categoryBox.set_model(self.store)
         

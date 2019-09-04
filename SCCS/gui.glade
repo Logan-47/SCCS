@@ -289,6 +289,9 @@ Aryan Verma</property>
     <property name="has_resize_grip">True</property>
     <signal name="destroy" handler="on_mainwindow_destroy" swapped="no"/>
     <child>
+      <placeholder/>
+    </child>
+    <child>
       <object class="GtkBox" id="mainBox">
         <property name="name">mainBox</property>
         <property name="visible">True</property>
@@ -570,9 +573,9 @@ Aryan Verma</property>
     <property name="copyright" translatable="yes"> HBTU, Kanpur</property>
     <property name="comments" translatable="yes">Software Component Catlouging Software
 by:-  Ashish Singh
-	- Ayush Kumar
-	- Ayushman
-	- Aryan Verma</property>
+  - Ayush Kumar
+  - Ayushman
+  - Aryan Verma</property>
     <property name="authors">Ashish Singh</property>
     <property name="logo">img/12c5b459d25b3c4d03bed46ef33933e6.jpg</property>
     <child>
@@ -932,8 +935,7 @@ by:-  Ashish Singh
                 <property name="can_focus">False</property>
                 <property name="has_entry">True</property>
                 <items>
-                  <item id="Appication" translatable="yes">Application Software</item>
-                  <item id="Software" translatable="yes">System Software</item>
+                  <item translatable="yes"/>
                 </items>
                 <child internal-child="entry">
                   <object class="GtkEntry" id="removeMainType">
