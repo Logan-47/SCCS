@@ -3,6 +3,7 @@
 A Software Component Cataloguing Software built using Python, GTK3, Glade and MySQL.
 
 A user of the catalouger can:
+    
     - Enter the details of a component: Name, Type (Application/System Software), Category, and description.
     - Read about certain component
     - Update details of certain component
