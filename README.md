@@ -8,6 +8,7 @@ A user of the catalouger can:
     - Read about certain component
     - Update details of certain component
     - Delete details of  certain component
+    - Search for a specific component
     - Sort Data by name
     - Sort Data by Type
 
